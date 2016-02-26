@@ -17,8 +17,6 @@ make
 wait
 sudo make install
 wait
-cd ..
-wait
 curl install.meteor.com | /bin/sh
 wait
 touch /etc/yum.repos.d/mongodb-org-3.0.repo

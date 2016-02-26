@@ -11,7 +11,7 @@ wait
 git pull
 wait
 echo "ZIPPING..."
-sudo meteor bundle --debug bundle.tgz 
+meteor bundle --debug bundle.tgz 
 wait
 echo "UNZIPPING"
 tar -zxvf bundle.tgz

@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "KILL NODE"
-pkill node
+killall node
 wait
 echo "DELTE BUNDLE"
 rm -rf bundle.tgz
@@ -11,7 +11,7 @@ wait
 git pull
 wait
 echo "ZIPPING..."
-sudo meteor bundle --debug bundle.tgz 
+meteor bundle --debug bundle.tgz 
 wait
 echo "UNZIPPING"
 tar -zxvf bundle.tgz

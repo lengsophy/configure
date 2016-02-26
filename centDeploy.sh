@@ -1,4 +1,4 @@
-meteor bundle bundle.tgz 
+su meteor bundle bundle.tgz 
 wait
 tar -zxvf bundle.tgz
 wait

@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "KILL NODE"
-killall node
+pkill node
 wait
 echo "DELTE BUNDLE"
 rm -rf bundle.tgz

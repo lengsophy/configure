@@ -23,6 +23,7 @@ sudo npm install -g n
 wait
 sudo n 0.10.40
 wait
+cd ..
 sudo yum install npm
 wait
 npm install pm2 -g

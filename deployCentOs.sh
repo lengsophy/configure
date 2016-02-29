@@ -3,6 +3,8 @@ wait
 cd
 sudo git clone https://github.com/noolab/safirv1.git
 wait
+sudo chmod -R 777 safirv1/
+wait
 cd safirv1
 meteor build ..
 wait

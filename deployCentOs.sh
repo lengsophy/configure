@@ -1,20 +1,20 @@
 pm2 kill
 wait
 cd
-git clone https://github.com/noolab/safirv1.git
+sudo git clone https://github.com/noolab/safirv1.git
 wait
 cd safirv1
 meteor build ..
 wait
 cd ..
-rm -rIv safirv1
-tar -zxvf safirv1.tar.gz
+sudo rm -rIv safirv1
+sudo tar -zxvf safirv1.tar.gz
 wait
-rm -rf safirv1.tar.gz
+sudo rm -rf safirv1.tar.gz
 cd bundle/programs/server/
-npm install
+sudo npm install
 wait
-npm install bcrypt
+sudo npm install bcrypt
 wait
 cd
 cd bundle

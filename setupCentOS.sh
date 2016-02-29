@@ -26,12 +26,13 @@ wait
 cd ..
 sudo yum install npm
 wait
-npm install pm2 -g
+sudo npm install pm2 -g
 wait
-sudo cp mongodb-org-3.0.repo etc/yum.repos.d/
+sudo cp mongodb-org-3.0.repo /etc/yum.repos.d/
 wait 
-yum install -y mongodb-org
+sudo yum install -y mongodb-org
 wait
 sudo semanage port -a -t mongod_port_t -p tcp 27017
 wait 
 sudo service mongod start
+echo "finish"

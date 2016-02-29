@@ -40,11 +40,10 @@ cd /home/$NODE_USER
 rm -rIv $GIT_FOLDERNAME
 git clone $GIT_REPO
 cd $GIT_FOLDERNAME
-meteor build ..
-cd ..
-rm -rIv $GIT_FOLDERNAME
-tar -zxvf $GIT_FOLDERNAME.tar.gz
-rm $GIT_FOLDERNAME.tar.gz
+sudo meteor bundle bundle.tgz 
+wait
+sudo tar -zxvf bundle.tgz
+wait
 cd bundle/programs/server/
 rm -RrIv node_modules/fibers/
 npm install

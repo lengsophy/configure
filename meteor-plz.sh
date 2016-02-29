@@ -36,19 +36,26 @@ NODE_USER=centos
 # <----- BEGIN SCRIPT ----->
 # clone source to server + configure
 pm2 kill
+wait
 cd /home/$NODE_USER
+wait
 rm -rIv $GIT_FOLDERNAME
+wait
 git clone $GIT_REPO
+wait
 cd $GIT_FOLDERNAME
-meteor build ..
-cd ..
-rm -rIv $GIT_FOLDERNAME
-tar -zxvf $GIT_FOLDERNAME.tar.gz
-rm $GIT_FOLDERNAME.tar.gz
+sudo meteor bundle bundle.tgz 
+wait
+sudo tar -zxvf bundle.tgz
+wait
 cd bundle/programs/server/
+wait
 rm -RrIv node_modules/fibers/
+wait
 npm install
+wait
 npm install bcrypt
+wait
 
 # start meteor app with pm2
 cd /home/$NODE_USER/bundle

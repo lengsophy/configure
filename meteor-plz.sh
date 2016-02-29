@@ -44,7 +44,7 @@ wait
 git clone $GIT_REPO
 wait
 cd $GIT_FOLDERNAME
-sudo meteor bundle bundle.tgz 
+meteor bundle bundle.tgz 
 wait
 sudo tar -zxvf bundle.tgz
 wait

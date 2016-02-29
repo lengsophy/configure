@@ -5,6 +5,8 @@ yum groupinstall "Development Tools"
 wait
 yum install wget
 wait
+yum install sudo gcc-c++
+wait
 wget http://nodejs.org/dist/v0.10.35/node-v0.10.35.tar.gz
 wait
 tar xvfz node-v0.10.35.tar.gz
@@ -17,18 +19,21 @@ make
 wait
 sudo make install
 wait
+sudo npm cache clean -f
+wait
+sudo npm install -g n
+wait
+sudo n stable
+wait
+sudo n 0.8.21
+wait
 cd ..
 wait
 curl install.meteor.com | /bin/sh
 wait
-touch /etc/yum.repos.d/mongodb-org-3.0.repo
+sudo npm install pm2 -g
 wait
-vi /etc/yum.repos.d/mongodb-org-3.0.repo  
-"[mongodb-org-3.0]
-name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
-gpgcheck=0
-enabled=1"
+sudo cp mongodb-org-3.0.repo etc/yum.repos.d/
 wait 
 yum install -y mongodb-org
 echo "FINISH"

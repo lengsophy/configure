@@ -5,6 +5,8 @@ yum groupinstall "Development Tools"
 wait
 yum install wget
 wait
+sudo yum install epel-release
+wait
 yum install sudo gcc-c++
 wait
 wget http://nodejs.org/dist/v0.10.35/node-v0.10.35.tar.gz
@@ -19,12 +21,13 @@ make
 wait
 sudo make install
 wait
+sudo yum install npm
+wait
 sudo npm install -g n
 wait
 sudo n 0.10.40
 wait
 cd ..
-sudo yum install npm
 wait
 sudo npm install pm2 -g
 wait
@@ -35,3 +38,4 @@ wait
 sudo semanage port -a -t mongod_port_t -p tcp 27017
 wait 
 sudo service mongod start
+echo "finish"

@@ -1,0 +1,69 @@
+ls
+exit
+ls
+yum install nodejs npm
+sud yum install nodejs npm
+su yum install nodejs npm
+sudo yum install nodejs npm
+node
+nodejs
+yum install wget
+sudo yum install wget
+wget http://mirrors.nl.eu.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch
+wget http://mirrors.nl.eu.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
+rpm -Uvh epel-release-6-8.noarch.rpm
+sudo rpm -Uvh epel-release-6-8.noarch.rpm
+sudo rm epel-release-6-8.noarch.rpm -f
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo yum install nodejs npm
+node
+sudo yum install nodejs
+sudo yum install nodejsnode
+node
+yum update
+sudo yum update
+python
+;d
+yum
+yum update
+sudo youm update
+sudo yum update
+rpm -Va --nofiles --nodigest
+ls
+sudo yum update
+--skip-broken 
+sudo --skip-broken 
+sudo yum yum install https://kojipkgs.fedoraproject.org//packages/python-rsa/3.3/3.el6/noarch/python2-rsa-3.3-3.el6.noarch.rpm
+/bin/yum --help
+sudo yum install https://kojipkgs.fedoraproject.org//packages/python-rsa/3.3/3.el6/noarch/python2-rsa-3.3-3.el6.noarch.rpm
+p
+ls
+-v python
+python -v
+python version
+python --v
+python -h
+yum update
+sudo yum update
+yum groupinstall "Development Tools"
+sudo yum groupinstall "Development Tools"
+ls
+python
+ls
+yum
+node
+nodejs
+sudo yum install https://kojipkgs.fedoraproject.org//packages/python-rsa/3.3/3.el6/noarch/python2-rsa-3.3-3.el6.noarch.rpm
+ls
+ll
+cd ..
+ls
+cd contos
+ls
+cd centos/
+ls
+git clone https://github.com/lengsophy/configure.git
+yum install git
+sudo yum install git
+

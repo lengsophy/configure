@@ -1,13 +1,13 @@
 #!/bin/bash
-yum update 
+sudo yum update 
 wait
-yum groupinstall "Development Tools"
+sudo yum groupinstall "Development Tools"
 wait
-yum install wget
+sudo yum install wget
 wait
 sudo yum install epel-release
 wait
-yum install sudo gcc-c++
+sudo yum install sudo gcc-c++
 wait
 wget http://nodejs.org/dist/v0.10.35/node-v0.10.35.tar.gz
 wait

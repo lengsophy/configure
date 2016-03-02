@@ -9,12 +9,12 @@ cd safirv1
 meteor build ..
 wait
 cd ..
-sudo rm -rIv safirv1
+sudo rm -rIv safirv1 -rf
 sudo tar -zxvf safirv1.tar.gz
 wait
 sudo rm -rf safirv1.tar.gz
 cd bundle/programs/server/
-sudo npm install
+sudo yum install npm
 wait
 sudo npm install bcrypt
 wait

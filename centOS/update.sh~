@@ -1,6 +1,10 @@
+#!/bin/bash
+sudo rm bundle -rf
+echo "KILL NODE"
+sudo killall node
+wait
 pm2 kill
 wait
-cd
 sudo git clone https://github.com/noolab/safirv1.git
 wait
 sudo chmod -R 777 safirv1/

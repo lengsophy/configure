@@ -14,14 +14,19 @@ sudo tar -zxvf safirv1.tar.gz
 wait
 sudo rm -rf safirv1.tar.gz
 cd bundle/programs/server/
-sudo yum install nodejs npm
-wait
-npm install pm2 -g
-wait
 sudo npm install
 wait
 sudo npm install bcrypt
 wait
 cd
 cd bundle
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http://52.87.186.87/ pm2 start --name "1000" main.js
+PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 pm2 start --name "1000" main.js
+wait
+sudo npm -g install forever
+wait
+cd
+cd bundle/programs/server/
+sudo npm install
+wait
+cd ../../.. 
+PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 node bundle/main.js

@@ -21,12 +21,4 @@ wait
 cd
 cd bundle
 PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 pm2 start --name "1000" main.js
-wait
-sudo npm -g install forever
-wait
-cd
-cd bundle/programs/server/
-sudo npm install
-wait
-cd ../../.. 
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 node bundle/main.js
+

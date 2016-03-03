@@ -11,6 +11,8 @@ sudo yum install gcc-c++
 wait
 sudo yum install nodejs npm
 wait
+sudo yum install npm
+wait
 sudo npm install pm2 -g
 wait
 curl install.meteor.com | /bin/sh

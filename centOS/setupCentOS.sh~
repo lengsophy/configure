@@ -7,9 +7,11 @@ sudo yum install wget
 wait
 sudo yum install epel-release
 wait
-sudo yum install sudo gcc-c++
+sudo yum install gcc-c++
 wait
 sudo yum install nodejs npm
+wait
+sudo yum install npm
 wait
 sudo npm install pm2 -g
 wait

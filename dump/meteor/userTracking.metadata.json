@@ -1,1 +1,1 @@
-{"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"meteor.userTracking"}]}
+{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "meteor.userTracking", "name" : "_id_" } ] }

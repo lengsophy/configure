@@ -1,36 +1,44 @@
-#!/bin/bash
-sudo rm bundle -rf
-echo "KILL NODE"
-sudo killall node
+sudo yum install epel-release
+wait
+sudo yum install nodejs
 wait
 pm2 kill
+wait 
+sudo killall node
 wait
-sudo git clone https://github.com/noolab/safirv1.git
+sudo cp mongodb.repo  /etc/yum.repos.d/
+wait 
+sudo yum install -y mongodb-org
 wait
-sudo chmod -R 777 safirv1/
+sudo semanage port -a -t mongod_port_t -p tcp 27017
+wait 
+sudo service mongod start
+wait
+cd /var/www/html/test
 wait
 cd safirv1
-meteor build ..
 wait
-cd ..
-sudo rm -rf safirv1
-sudo tar -zxvf safirv1.tar.gz
+git pull
 wait
-sudo rm -rf safirv1.tar.gz
+sudo rm bundle bundle.tgz -rf
+wait
+meteor bundle bundle.tgz
+#cd ..
+#sudo rm -r -f safirv1
+sudo tar -zxvf bundle.tgz
+#wait
+#sudo rm -rf safirv1.tar.gz
+sudo yum install nodejs npm
+wait
+npm install pm2 -g
+wait
 cd bundle/programs/server/
 sudo npm install
 wait
 sudo npm install bcrypt
 wait
-cd
+cd ../../..
+sudo chmod -R 777 bundle
+sudo chown -R apache:apache bundle
 cd bundle
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 pm2 start --name "1000" main.js
-wait
-sudo npm -g install forever
-wait
-cd
-cd bundle/programs/server/
-sudo npm install
-wait
-cd ../../.. 
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http:$1 node bundle/main.js
+PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=$1 nohup node bundle/main.js &

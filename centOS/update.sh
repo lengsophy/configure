@@ -24,5 +24,4 @@ wait
 cd ../../..
 sudo chmod -R 777 bundle
 sudo chown -R apache:apache bundle
-cd bundle
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=$1 nohup node bundle/main.js &
+MONGO_URL=mongodb://localhost:27017/meteor PORT=80 ROOT_URL=$1 nohup node bundle/main.js &

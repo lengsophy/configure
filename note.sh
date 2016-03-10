@@ -45,3 +45,8 @@ sudo service nginx restart
 rm -r -f .ssh/known_hosts
 #use for scp
 scp /home/noolab/Documents/jscsspi/image.zip root@164.138.19.140:/var/www/cdn/
+
+
+#yum update error
+
+rm -f /var/run/yum.pid

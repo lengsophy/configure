@@ -1,4 +1,3 @@
-sudo killall node
 wait
 sudo semanage port -a -t mongod_port_t -p tcp 27017
 wait 

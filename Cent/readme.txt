@@ -32,3 +32,8 @@ cp deploy_short.sh update_short.sh project_name/
 or you want to update
 
 ./update_short.sh "http://IP"
+
+
+
+
+#sudo scp -r root@164.138.19.132:/var/www/html/test/db/configure/dump /home/noolab/Documents/configurServer

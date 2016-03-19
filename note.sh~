@@ -44,7 +44,7 @@ sudo service nginx restart
 #do this when host is cach
 rm -r -f .ssh/known_hosts
 #use for scp
-scp /home/noolab/Documents/jscsspi/image.zip root@164.138.19.140:/var/www/cdn/
+scp /home/noolab/Documents/jscsspi/image.zip root@164.138.19.140:/var/www/cdn/  /home/noolab/Documents/configurServer
 
 
 #yum update error

@@ -1,0 +1,26 @@
+<template name="mainLayout">
+	<section id="page-wrapper">
+		{{> header }}
+		<section id="content-wrapper">
+            <section id="header">
+                <div id="header-left">
+                    <a href="#" id="a-menu"><img src="img/icons/menu.png" alt="menu" /></a>
+                    <a href="#" id="a-shoping"><img src="img/icons/shoping-01.png" alt="menu" /></a>
+                </div>
+                <div id="header-title">
+                    <h1><a href="/"><img src="img/icons/logo-01.png" /></a></h1>
+                </div>
+
+                <div id="header-right">
+                    <a href="#" id="a-sidebar">REFINE<!--<img src="img/icons/menu.png" alt="Sidebar" />--></a>
+                </div>
+            </section> <!-- #header -->
+			
+			<section id="refine_menu">
+                {{> forummenu}}
+			</section> <!-- #refine menu -->
+		    {{> yield}}
+            {{> footer}}
+        </section> <!-- #content-wrapper -->
+	</section><!-- #page-wrapper -->
+</template>

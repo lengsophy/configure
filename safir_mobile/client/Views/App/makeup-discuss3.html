@@ -1,0 +1,46 @@
+<template name="discuss3">
+	<article>
+        <section class="shadow_bottom">
+        	<div class="wrapper">
+                <div class="row">
+					<div class="col-xs-12">
+						<h4>MAKEUP DISCUSSION</h4>
+                        <div class="reply-makeup">
+                            <ul class="list-inline">
+                                <li style="font-size: 12px;">MAKEUP / WEEKLY COLOR CHALLENGE</li>
+								<li class="li-reply" onclick="popup()">REPLY</li>
+                            </ul>
+                        </div>
+                        <div class="hold-each-comment">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <img src="img/woman.png" class="">
+                                    <p class="text-center" style="font-size: 18px;">Sarah</p>
+                                    <p class="text-center" style="font-size: 12px;">07/20/2015 <br> 11:16</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <p class="title-comment ti-des">WEEKLY COLOR CHALLENGE! COME JOIN!</p>
+                                    <p class="desc-comment com-des">mrsbaine / HALL OF FARMER  HALL OF FARMER</p>
+                                    <p class="small-desc-comment">Bla blah..... <br>Makeup with red lips</p>
+                                    
+                                </div>
+	                           	<div class="col-xs-12">
+	                           		<div class="hold-like-row">
+	                                    <a href="" class="a-right"><i class="fa fa-heart-o"> 19</i></a>
+	                                </div><!-- hold-reply-row -->
+	                           	</div>
+                            </div>
+                        </div> <!-- hold-each-comment-->
+					</div> <!-- col-xs-12 -->
+				</div> <!-- row -->
+            </div>
+        </section>
+    </article>
+    <script type="text/javascript">
+		function popup() {
+			w2popup.open({
+				body: '<div class="form-popup"><div class="col-xs-12"><textarea class="form-control popup-textarea" rows="10" placeholder="Text reply commend..."></textarea></div><div class="col-xs-12"><a href="" class="btn-send pull-right">SEND</a></div></div>'
+			});
+		}
+	</script>
+</template>

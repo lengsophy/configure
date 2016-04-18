@@ -36,4 +36,4 @@ or you want to update
 
 
 
-#sudo scp -r root@164.138.19.132:/var/www/html/test/db/configure/dump /home/noolab/Documents/configurServer
+#sudo scp -r root@164.138.19.132:/var/www/html/test/db/db/dump /home/noolab
